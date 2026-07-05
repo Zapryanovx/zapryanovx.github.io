@@ -1,0 +1,33 @@
+<svg viewBox="0 0 480 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bs-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#16212c"/>
+      <stop offset="100%" stop-color="#1c2a37"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="320" rx="16" fill="url(#bs-bg)"/>
+
+  <polygon points="240,60 330,110 150,110" fill="#f5c451"/>
+  <rect x="150" y="115" width="180" height="10" fill="#f5c451"/>
+
+  <g fill="#f5c451">
+    <rect x="160" y="130" width="16" height="80"/>
+    <rect x="196" y="130" width="16" height="80"/>
+    <rect x="232" y="130" width="16" height="80"/>
+    <rect x="268" y="130" width="16" height="80"/>
+    <rect x="304" y="130" width="16" height="80"/>
+  </g>
+  <rect x="145" y="215" width="190" height="14" fill="#f5c451"/>
+  <rect x="130" y="229" width="220" height="12" fill="#e0a93a"/>
+
+  <g>
+    <rect x="345" y="185" width="70" height="46" rx="6" fill="#1c2a37" stroke="#7cbcff" stroke-width="2.5"/>
+    <rect x="345" y="196" width="70" height="10" fill="#7cbcff"/>
+    <circle cx="395" cy="222" r="6" fill="#7cbcff"/>
+  </g>
+
+  <g fill="#3ecf8e">
+    <circle cx="70" cy="90" r="16"/>
+    <text x="70" y="95" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="16" fill="#0f1720">$</text>
+  </g>
+</svg>
