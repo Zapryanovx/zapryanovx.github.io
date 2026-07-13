@@ -31,9 +31,20 @@
     <h2 class="section-title">LeetCode Progress</h2>
     <div class="leetcode-panel">
       <div class="leetcode-summary">
-        <div class="leetcode-solved">
-          <span class="leetcode-solved-num">426</span>
-          <span class="leetcode-solved-total">/ 3991 solved</span>
+        <div class="leetcode-ring-wrap">
+          <svg class="leetcode-ring" viewBox="0 0 160 160">
+            <circle class="ring-track" cx="80" cy="80" r="68"/>
+            <circle class="ring-seg ring-easy" cx="80" cy="80" r="68"
+                    stroke-dasharray="241.71 185.55" stroke-dashoffset="0"/>
+            <circle class="ring-seg ring-medium" cx="80" cy="80" r="68"
+                    stroke-dasharray="171.5 255.75" stroke-dashoffset="-241.71"/>
+            <circle class="ring-seg ring-hard" cx="80" cy="80" r="68"
+                    stroke-dasharray="14.04 413.22" stroke-dashoffset="-413.22"/>
+          </svg>
+          <div class="leetcode-ring-label">
+            <span class="leetcode-solved-num">426</span>
+            <span class="leetcode-solved-total">/ 3991 solved</span>
+          </div>
         </div>
         <div class="leetcode-breakdown">
           <div class="lc-stat lc-easy"><span class="lc-label">Easy</span><span>241 / 954</span></div>

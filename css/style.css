@@ -476,18 +476,48 @@ a:hover { color: var(--color-primary-hover); }
   margin-bottom: 1rem;
 }
 
-.leetcode-solved {
+.leetcode-ring-wrap {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin-bottom: 1.25rem;
+}
+.leetcode-ring {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+.ring-track {
+  fill: none;
+  stroke: rgba(255,255,255,0.08);
+  stroke-width: 14;
+}
+.ring-seg {
+  fill: none;
+  stroke-width: 14;
+}
+.ring-easy { stroke: #3ecf8e; }
+.ring-medium { stroke: #ffb800; }
+.ring-hard { stroke: #ff5c5c; }
+
+.leetcode-ring-label {
+  position: absolute;
+  inset: 0;
   display: flex;
-  align-items: baseline;
-  gap: 0.4rem;
-  margin-bottom: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .leetcode-solved-num {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-weight: 700;
+  line-height: 1;
 }
 .leetcode-solved-total {
   color: var(--color-text-muted);
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
 }
 
 .leetcode-breakdown {
