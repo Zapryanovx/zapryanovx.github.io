@@ -32,18 +32,28 @@
     <div class="leetcode-panel">
       <div class="leetcode-summary">
         <div class="leetcode-ring-wrap">
-          <svg class="leetcode-ring" viewBox="0 0 160 160">
-            <circle class="ring-track" cx="80" cy="80" r="68"/>
-            <circle class="ring-seg ring-easy" cx="80" cy="80" r="68"
-                    stroke-dasharray="241.71 185.55" stroke-dashoffset="0"/>
-            <circle class="ring-seg ring-medium" cx="80" cy="80" r="68"
-                    stroke-dasharray="171.5 255.75" stroke-dashoffset="-241.71"/>
-            <circle class="ring-seg ring-hard" cx="80" cy="80" r="68"
-                    stroke-dasharray="14.04 413.22" stroke-dashoffset="-413.22"/>
+          <svg class="leetcode-ring" viewBox="0 0 200 200">
+            <defs>
+              <linearGradient id="ringGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#22d3c8"/>
+                <stop offset="30%" stop-color="#f97316"/>
+                <stop offset="55%" stop-color="#fde68a"/>
+                <stop offset="80%" stop-color="#f472b6"/>
+                <stop offset="100%" stop-color="#ef4444"/>
+              </linearGradient>
+            </defs>
+            <circle class="ring-track" cx="100" cy="100" r="86"/>
+            <circle class="ring-arc" cx="100" cy="100" r="86"
+                    stroke="url(#ringGradient)"
+                    stroke-dasharray="475.51 64.84" stroke-dashoffset="0"/>
           </svg>
           <div class="leetcode-ring-label">
-            <span class="leetcode-solved-num">426</span>
-            <span class="leetcode-solved-total">/ 3991 solved</span>
+            <div class="leetcode-ring-count">
+              <span class="leetcode-solved-num">426</span>
+              <span class="leetcode-solved-total">/3991</span>
+            </div>
+            <div class="leetcode-ring-status">&check; Solved</div>
+            <div class="leetcode-ring-attempting">1 Attempting</div>
           </div>
         </div>
         <div class="leetcode-breakdown">
@@ -142,5 +152,6 @@
 </footer>
 
 <script src="js/script.js"></script>
+<script data-goatcounter="https://zarpyanovx.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
