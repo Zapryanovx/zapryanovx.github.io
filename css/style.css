@@ -489,14 +489,16 @@ a:hover { color: var(--color-primary-hover); }
 }
 .ring-track {
   fill: none;
-  stroke: rgba(255,255,255,0.06);
-  stroke-width: 8;
+  stroke: rgba(255,255,255,0.08);
+  stroke-width: 14;
 }
-.ring-arc {
+.ring-seg {
   fill: none;
-  stroke-width: 8;
-  stroke-linecap: round;
+  stroke-width: 14;
 }
+.ring-easy { stroke: #3ecf8e; }
+.ring-medium { stroke: #ffb800; }
+.ring-hard { stroke: #ff5c5c; }
 
 .leetcode-ring-label {
   position: absolute;
@@ -507,11 +509,6 @@ a:hover { color: var(--color-primary-hover); }
   justify-content: center;
   text-align: center;
 }
-.leetcode-ring-count {
-  display: flex;
-  align-items: baseline;
-  gap: 0.2rem;
-}
 .leetcode-solved-num {
   font-size: 2.2rem;
   font-weight: 700;
@@ -519,18 +516,8 @@ a:hover { color: var(--color-primary-hover); }
 }
 .leetcode-solved-total {
   color: var(--color-text-muted);
-  font-size: 1rem;
-}
-.leetcode-ring-status {
-  color: #3ecf8e;
-  font-weight: 600;
   font-size: 0.85rem;
   margin-top: 0.3rem;
-}
-.leetcode-ring-attempting {
-  color: var(--color-text-muted);
-  font-size: 0.75rem;
-  margin-top: 0.2rem;
 }
 
 .leetcode-breakdown {
